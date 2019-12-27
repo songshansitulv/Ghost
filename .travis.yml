@@ -38,3 +38,5 @@ notifications:
     on_success: change
     on_failure: always
     on_pull_requests: false
+after_success:
+  - bash <(curl -s https://copilot.blackducksoftware.com/ci/travis/scripts/upload)
